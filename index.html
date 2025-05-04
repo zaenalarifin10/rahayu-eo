@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahayu EO | Kreasi Momen Tak Terlupakan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#9F7AEA',
+                            DEFAULT: '#8A2BE2',
+                            dark: '#6B46C1'
+                        },
+                        secondary: {
+                            light: '#F687B3',
+                            DEFAULT: '#ED64A6',
+                            dark: '#D53F8C'
+                        },
+                        accent: {
+                            light: '#FED7E2',
+                            DEFAULT: '#FBB6CE',
+                            dark: '#F687B3'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #8A2BE2 0%, #ED64A6 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #8A2BE2 0%, #ED64A6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .portfolio-item {
+            overflow: hidden;
+        }
+        .portfolio-item img {
+            transition: transform 0.5s ease;
+        }
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        /* Fixed mobile menu styles */
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 49;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 300px;
+            height: 100%;
+            background-color: white;
+            z-index: 50;
+            transition: right 0.3s ease;
+            overflow-y: auto;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .mobile-menu.active {
+            right: 0;
+        }
+        .blob {
+            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+            animation: morph 8s linear infinite;
+        }
+        @keyframes morph {
+            0% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
+            25% { border-radius: 45% 55% 65% 35% / 50% 50% 50% 50%; }
+            50% { border-radius: 50% 50% 55% 45% / 55% 45% 45% 55%; }
+            75% { border-radius: 55% 45% 45% 55% / 45% 55% 65% 35%; }
+            100% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white bg-opacity-95 shadow-md z-40 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold">
+                        <span class="gradient-text">Rahayu EO</span>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition duration-300">Beranda</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary font-medium transition duration-300">Layanan</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-primary font-medium transition duration-300">Portfolio</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition duration-300">Tentang</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition duration-300">Kontak</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#contact" class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition duration-300">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu p-6">
+        <div class="flex justify-between items-center mb-8">
+            <h1 class="text-2xl font-bold">
+                <span class="gradient-text">Rahayu EO</span>
+            </h1>
+            <button id="close-menu" class="text-gray-700 focus:outline-none">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-6">
+            <a href="#home" class="text-gray-700 hover:text-primary font-medium transition duration-300">Beranda</a>
+            <a href="#services" class="text-gray-700 hover:text-primary font-medium transition duration-300">Layanan</a>
+            <a href="#portfolio" class="text-gray-700 hover:text-primary font-medium transition duration-300">Portfolio</a>
+            <a href="#about" class="text-gray-700 hover:text-primary font-medium transition duration-300">Tentang</a>
+            <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition duration-300">Kontak</a>
+            <a href="#contact" class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition duration-300 text-center mt-4">Hubungi Kami</a>
+        </nav>
+        <div class="mt-12">
+            <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition duration-300">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition duration-300">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-20 hero-pattern overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <div class="relative">
+                        <span class="absolute -top-10 -left-10 text-7xl text-primary-light opacity-20">
+                            <i class="fas fa-quote-left"></i>
+                        </span>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight relative z-10">
+                            Ciptakan <span class="gradient-text">Momen Magis</span> Bersama Kami
+                        </h1>
+                        <p class="text-gray-600 text-lg mb-8 max-w-lg">
+                            Rahayu EO hadir untuk mewujudkan acara impian Anda dengan sentuhan kreativitas dan profesionalisme yang tak tertandingi.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#services" class="gradient-bg text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition duration-300 shadow-lg shadow-primary/30">
+                                Jelajahi Layanan
+                            </a>
+                            <a href="#portfolio" class="bg-white text-primary border-2 border-primary px-8 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition duration-300">
+                                Lihat Portfolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-accent rounded-full opacity-30 blur-xl"></div>
+                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-primary rounded-full opacity-20 blur-xl"></div>
+                    <div class="relative z-10 blob bg-gradient-to-br from-primary to-secondary p-2">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Event Celebration" 
+                             class="w-full h-auto rounded-3xl shadow-xl">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-3xl font-bold gradient-text mb-2">800+</h3>
+                    <p class="text-gray-600">Acara Sukses</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-3xl font-bold gradient-text mb-2">50+</h3>
+                    <p class="text-gray-600">Tim Kreatif</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-3xl font-bold gradient-text mb-2">12+</h3>
+                    <p class="text-gray-600">Tahun Pengalaman</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-3xl font-bold gradient-text mb-2">25+</h3>
+                    <p class="text-gray-600">Penghargaan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-primary uppercase tracking-wider">Apa yang Kami Tawarkan</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Layanan Unggulan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Kami menawarkan berbagai layanan event organizer yang disesuaikan untuk memenuhi kebutuhan dan keinginan spesifik Anda.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-briefcase text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Corporate Event</h3>
+                    <p class="text-gray-600 mb-6">
+                        Kami menyelenggarakan acara perusahaan yang profesional, mulai dari konferensi, seminar, peluncuran produk, hingga gala dinner.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition duration-300">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Wedding Organizer</h3>
+                    <p class="text-gray-600 mb-6">
+                        Kami membantu mewujudkan pernikahan impian Anda, dari perencanaan konsep, dekorasi, katering, hingga dokumentasi.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition duration-300">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-birthday-cake text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Birthday Party</h3>
+                    <p class="text-gray-600 mb-6">
+                        Kami menciptakan pesta ulang tahun yang meriah dan berkesan untuk segala usia, dengan tema dan konsep yang unik.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition duration-300">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-music text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Concert & Festival</h3>
+                    <p class="text-gray-600 mb-6">
+                        Kami mengelola konser dan festival dengan sistem manajemen profesional, termasuk produksi panggung dan manajemen artis.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition duration-300">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Graduation Ceremony</h3>
+                    <p class="text-gray-600 mb-6">
+                        Kami menyelenggarakan upacara wisuda yang berkesan dan bermakna, dengan perhatian pada protokol dan tradisi akademik.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition duration-300">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mb-6 text-white">
+                        <i class="fas fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Exhibition & Bazaar</h3>
+                    <p class="text-gray-600 mb-6">
+                        Kami mengorganisir pameran dan bazaar dengan manajemen booth, pengaturan layout, dan promosi yang efektif.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition duration-300">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-primary uppercase tracking-wider">Proses Kerja</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Bagaimana Kami Bekerja</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Kami mengikuti proses yang terstruktur untuk memastikan setiap acara berjalan lancar dan sesuai dengan harapan Anda.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center relative">
+                    <div class="absolute -top-5 -right-5 w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold">1</div>
+                    <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6 text-white">
+                        <i class="fas fa-comments text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Konsultasi</h3>
+                    <p class="text-gray-600">
+                        Kami mendengarkan ide dan kebutuhan Anda untuk memahami visi acara yang diinginkan.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center relative">
+                    <div class="absolute -top-5 -right-5 w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold">2</div>
+                    <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6 text-white">
+                        <i class="fas fa-lightbulb text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Perencanaan</h3>
+                    <p class="text-gray-600">
+                        Kami merancang konsep acara yang sesuai dengan tema, anggaran, dan harapan Anda.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center relative">
+                    <div class="absolute -top-5 -right-5 w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold">3</div>
+                    <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6 text-white">
+                        <i class="fas fa-tasks text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Eksekusi</h3>
+                    <p class="text-gray-600">
+                        Kami mengelola semua aspek acara dengan detail dan presisi untuk hasil yang sempurna.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center relative">
+                    <div class="absolute -top-5 -right-5 w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold">4</div>
+                    <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6 text-white">
+                        <i class="fas fa-check-circle text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Evaluasi</h3>
+                    <p class="text-gray-600">
+                        Kami mengevaluasi hasil acara dan memastikan kepuasan Anda dengan layanan kami.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="  class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-primary uppercase tracking-wider">Karya Kami</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Portfolio Acara</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Lihat beberapa acara terbaik yang telah kami selenggarakan yang menunjukkan kreativitas dan profesionalisme kami.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="portfolio-item rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Corporate Event" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6 bg-white">
+                        <span class="text-xs font-semibold text-primary bg-primary bg-opacity-10 px-3 py-1 rounded-full">Corporate</span>
+                        <h3 class="text-xl font-semibold mt-3 mb-2">Annual Corporate Gathering</h3>
+                        <p class="text-gray-600 mb-4">Acara gathering tahunan untuk 500 karyawan dengan tema "Future Innovation".</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:text-secondary transition duration-300">
+                            Lihat Detail <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Wedding" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6 bg-white">
+                        <span class="text-xs font-semibold text-primary bg-primary bg-opacity-10 px-3 py-1 rounded-full">Wedding</span>
+                        <h3 class="text-xl font-semibold mt-3 mb-2">Pernikahan Adat Modern</h3>
+                        <p class="text-gray-600 mb-4">Pernikahan dengan perpaduan adat tradisional dan sentuhan modern untuk 300 tamu.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:text-secondary transition duration-300">
+                            Lihat Detail <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Music Festival" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6 bg-white">
+                        <span class="text-xs font-semibold text-primary bg-primary bg-opacity-10 px-3 py-1 rounded-full">Festival</span>
+                        <h3 class="text-xl font-semibold mt-3 mb-2">Summer Music Festival</h3>
+                        <p class="text-gray-600 mb-4">Festival musik musim panas dengan 10 band lokal dan internasional untuk 5000 pengunjung.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:text-secondary transition duration-300">
+                            Lihat Detail <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="gradient-bg text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition duration-300 shadow-lg shadow-primary/30">
+                    Lihat Semua Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-primary uppercase tracking-wider">Testimoni</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Apa Kata Klien Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Jangan hanya percaya kata-kata kami. Inilah yang dikatakan klien kami tentang pengalaman mereka bekerja sama dengan kami.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg relative">
+                    <div class="absolute -top-5 -left-5 text-5xl text-primary opacity-20">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-600 ml-2">5.0</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 relative z-10">
+                        "Rahayu EO melampaui harapan kami dalam menyelenggarakan acara peluncuran produk kami. Perhatian mereka terhadap detail, kreativitas, dan profesionalisme terlihat jelas selama proses persiapan hingga pelaksanaan acara."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Klien" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-gray-800 font-semibold">Budi Santoso</h4>
+                            <p class="text-gray-600">Marketing Director, Tech Innovations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg relative">
+                    <div class="absolute -top-5 -left-5 text-5xl text-primary opacity-20">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-600 ml-2">5.0</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 relative z-10">
+                        "Kami mempercayakan pernikahan kami kepada Rahayu EO, dan hasilnya benar-benar luar biasa. Mereka memahami visi kami dengan sempurna dan menghadirkan pernikahan impian yang bahkan melebihi ekspektasi kami."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Klien" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-gray-800 font-semibold">Siti Rahayu</h4>
+                            <p class="text-gray-600">Pengantin Wanita</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg relative">
+                    <div class="absolute -top-5 -left-5 text-5xl text-primary opacity-20">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-600 ml-2">4.5</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 relative z-10">
+                        "Festival musik yang diselenggarakan oleh Rahayu EO adalah pengalaman yang luar biasa. Manajemen panggung, sound system, dan koordinasi artis sangat profesional. Pengunjung sangat menikmati acara."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Klien" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-gray-800 font-semibold">Hendra Wijaya</h4>
+                            <p class="text-gray-600">Promotor Musik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 relative">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-primary rounded-full opacity-20 blur-xl"></div>
+                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-secondary rounded-full opacity-20 blur-xl"></div>
+                    <div class="relative z-10 blob bg-gradient-to-br from-primary to-secondary p-2">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Tentang Kami" 
+                             class="w-full h-auto rounded-3xl shadow-xl">
+                    </div>
+                </div>
+                <div class="lg:w-1/2 lg:pl-16">
+                    <span class="text-sm font-semibold text-primary uppercase tracking-wider">Tentang Kami</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Rahayu Event Organizer</h2>
+                    <p class="text-gray-600 mb-6">
+                        Didirikan pada tahun 2010, Rahayu EO telah memantapkan diri sebagai perusahaan event organizer terkemuka dengan reputasi kreativitas, profesionalisme, dan inovasi. Dengan tim kreatif berpengalaman, kami telah berhasil menyelenggarakan berbagai acara yang berkesan di berbagai sektor.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        Misi kami adalah menciptakan pengalaman acara yang tak terlupakan yang melebihi harapan klien sambil mematuhi standar kualitas, kreativitas, dan profesionalisme tertinggi.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4 text-white">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold gradient-text">50+</h4>
+                                <p class="text-gray-600">Tim Kreatif</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4 text-white">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold gradient-text">800+</h4>
+                                <p class="text-gray-600">Acara Sukses</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4 text-white">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold gradient-text">25+</h4>
+                                <p class="text-gray-600">Penghargaan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4 text-white">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold gradient-text">600+</h4>
+                                <p class="text-gray-600">Klien Puas</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="gradient-bg text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition duration-300 shadow-lg shadow-primary/30">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-sm font-semibold text-primary uppercase tracking-wider">Kontak</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Hubungi Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Punya acara dalam rencana atau ingin tahu lebih banyak tentang layanan kami? Hubungi kami hari ini untuk konsultasi gratis.
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Nama Anda">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Email Anda">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Telepon</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Nomor Telepon Anda">
+                        </div>
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Layanan yang Diminati</label>
+                            <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Pilih Layanan</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="wedding">Wedding Organizer</option>
+                                <option value="birthday">Birthday Party</option>
+                                <option value="concert">Concert & Festival</option>
+                                <option value="graduation">Graduation Ceremony</option>
+                                <option value="exhibition">Exhibition & Bazaar</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Ceritakan tentang acara Anda"></textarea>
+                        </div>
+                        <button type="submit" class="w-full gradient-bg text-white py-3 rounded-lg font-medium hover:opacity-90 transition duration-300 shadow-lg shadow-primary/30">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg h-full">
+                        <h3 class="text-2xl font-semibold mb-6 gradient-text">Informasi Kontak</h3>
+                        
+                        <div class="flex items-start mb-8">
+                            <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4 text-white shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-1">Alamat</h4>
+                                <p class="text-gray-600">Jl. Kreatif No. 123, Kawasan Bisnis, Jakarta 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-8">
+                            <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4 text-white shrink-0">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-1">Telepon</h4>
+                                <p class="text-gray-600">+62 (21) 987-6543</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-8">
+                            <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4 text-white shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-1">Email</h4>
+                                <p class="text-gray-600">info@rahayueo.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-8">
+                            <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4 text-white shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium mb-1">Jam Kerja</h4>
+                                <p class="text-gray-600">Senin - Jumat: 9:00 - 18:00</p>
+                                <p class="text-gray-600">Sabtu: 9:00 - 15:00</p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold mb-4">Ikuti Kami</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center text-white hover:opacity-90 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center text-white hover:opacity-90 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center text-white hover:opacity-90 transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center text-white hover:opacity-90 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Rahayu EO</h3>
+                    <p class="text-white text-opacity-80 mb-6">
+                        Menciptakan momen berkesan, satu acara pada satu waktu. Kami berkomitmen untuk memberikan layanan event organizer berkualitas tinggi yang melebihi harapan klien.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Layanan</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Corporate Event</a></li>
+                        <li><a href="#services" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Wedding Organizer</a></li>
+                        <li><a href="#services" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Birthday Party</a></li>
+                        <li><a href="#services" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Concert & Festival</a></li>
+                        <li><a href="#services" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Graduation Ceremony</a></li>
+                        <li><a href="#services" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Exhibition & Bazaar</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Tautan Cepat</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Beranda</a></li>
+                        <li><a href="#services" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Layanan</a></li>
+                        <li><a href="#portfolio" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Portfolio</a></li>
+                        <li><a href="#about" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Tentang Kami</a></li>
+                        <li><a href="#contact" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Newsletter</h3>
+                    <p class="text-white text-opacity-80 mb-4">
+                        Berlangganan newsletter kami untuk menerima update tentang acara terbaru dan inspirasi event.
+                    </p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Email Anda" class="px-4 py-3 w-full rounded-l-lg focus:outline-none text-gray-800">
+                            <button type="submit" class="bg-white text-primary px-4 py-3 rounded-r-lg hover:bg-gray-100 transition duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-white border-opacity-20 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-white text-opacity-80 mb-4 md:mb-0">&copy; 2023 Rahayu EO. Hak Cipta Dilindungi.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Kebijakan Privasi</a>
+                        <a href="#" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Syarat Layanan</a>
+                        <a href="#" class="text-white text-opacity-80 hover:text-opacity-100 transition duration-300">Kebijakan Cookie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="fixed bottom-6 right-6 w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center shadow-lg hover:opacity-90 transition duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const closeMenu = document.getElementById('close-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closeMenu.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+
+            mobileMenuOverlay.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                    mobileMenuOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
