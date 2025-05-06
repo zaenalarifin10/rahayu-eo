@@ -111,29 +111,7 @@
         }
     </style>
 </head>
-    <script>
-  document.getElementById('waForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let phone = document.getElementById('phone').value;
-    let service = document.getElementById('service').value;
-    let message = document.getElementById('message').value;
-
-    let text = `Halo Admin, saya ingin informasi lebih lanjut:%0A` +
-               `Nama: ${name}%0A` +
-               `Email: ${email}%0A` +
-               `No HP: ${phone}%0A` +
-               `Layanan: ${service}%0A` +
-               `Pesan: ${message}`;
-
-    let nomorWA = '62895343157218'; // ganti dengan nomor WA kamu
-    let waLink = `https://wa.me/${nomorWA}?text=${encodeURIComponent(text)}`;
-
-    window.open(waLink, '_blank');
-  });
-    </script>
+    
 <body class="bg-gray-50">
     <!-- Header -->
     <header class="fixed w-full bg-white bg-opacity-95 shadow-md z-40 backdrop-blur-sm">
@@ -650,41 +628,46 @@
             
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="lg:w-1/2">
-                <form class="bg-white p-8 rounded-2xl shadow-lg" id="waForm">  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">  
-    <div>  
-      <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>  
-      <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Nama Anda">  
-    </div>  
-    <div>  
-      <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>  
-      <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Email Anda">  
-    </div>  
-  </div>  
-  <div class="mb-6">  
-    <label for="phone" class="block text-gray-700 font-medium mb-2">Telepon</label>  
-    <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Nomor Telepon Anda">  
-  </div>  
-  <div class="mb-6">  
-    <label for="service" class="block text-gray-700 font-medium mb-2">Layanan yang Diminati</label>  
-    <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">  
-      <option value="">Pilih Layanan</option>  
-      <option value="corporate">Corporate Event</option>  
-      <option value="wedding">Wedding Organizer</option>  
-      <option value="birthday">Birthday Party</option>  
-      <option value="concert">Concert & Festival</option>  
-      <option value="graduation">Graduation Ceremony</option>  
-      <option value="exhibition">Exhibition & Bazaar</option>  
-    </select>  
-  </div>  
-  <div class="mb-6">  
-    <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>  
-    <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Ceritakan tentang acara Anda"></textarea>  
-  </div>  
-  <button type="submit" class="w-full gradient-bg text-white py-3 rounded-lg font-medium hover:opacity-90 transition duration-300 shadow-lg shadow-primary/30">  
-    Kirim Pesan  
-  </button>  
-                </form>
+    <form class="bg-white p-8 rounded-2xl shadow-lg" id="waForm">  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">  
+        <div>  
+          <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>  
+          <input type="text" id="name" placeholder="Nama Anda" required>
+          <span id="nameError" class="error hidden">Nama harus diisi</span>
+        </div>  
+        <div>  
+          <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>  
+          <input type="email" id="email" placeholder="Email Anda" required>
+          <span id="emailError" class="error hidden">Email tidak valid</span>
+        </div>  
+      </div>  
+      <div class="mb-6">  
+        <label for="phone" class="block text-gray-700 font-medium mb-2">Telepon</label>  
+        <input type="tel" id="phone" placeholder="Nomor Telepon Anda" required>
+        <span id="phoneError" class="error hidden">Nomor telepon harus diisi</span>
+      </div>  
+      <div class="mb-6">  
+        <label for="service" class="block text-gray-700 font-medium mb-2">Layanan yang Diminati</label>  
+        <select id="service" required>  
+          <option value="">Pilih Layanan</option>  
+          <option value="Corporate Event">Corporate Event</option>  
+          <option value="Wedding Organizer">Wedding Organizer</option>  
+          <option value="Birthday Party">Birthday Party</option>  
+          <option value="Concert & Festival">Concert & Festival</option>  
+          <option value="Graduation Ceremony">Graduation Ceremony</option>  
+          <option value="Exhibition & Bazaar">Exhibition & Bazaar</option>  
+        </select>
+        <span id="serviceError" class="error hidden">Silakan pilih layanan</span>
+      </div>  
+      <div class="mb-6">  
+        <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>  
+        <textarea id="message" rows="4" placeholder="Ceritakan tentang acara Anda" required></textarea>
+        <span id="messageError" class="error hidden">Pesan harus diisi</span>
+      </div>  
+      <button type="submit" class="w-full gradient-bg">  
+        Kirim Pesan  
+      </button>  
+            </form>
                 </div>
                 
                 <div class="lg:w-1/2">
@@ -876,6 +859,66 @@
             });
         });
     </script>
-
+  <script>
+    document.getElementById('waForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Reset error messages
+      document.querySelectorAll('.error').forEach(el => el.classList.add('hidden'));
+      
+      // Get form values
+      let name = document.getElementById('name').value.trim();
+      let email = document.getElementById('email').value.trim();
+      let phone = document.getElementById('phone').value.trim();
+      let service = document.getElementById('service').value;
+      let message = document.getElementById('message').value.trim();
+      
+      // Validate form
+      let isValid = true;
+      
+      if (!name) {
+        document.getElementById('nameError').classList.remove('hidden');
+        isValid = false;
+      }
+      
+      if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+        document.getElementById('emailError').classList.remove('hidden');
+        isValid = false;
+      }
+      
+      if (!phone) {
+        document.getElementById('phoneError').classList.remove('hidden');
+        isValid = false;
+      }
+      
+      if (!service) {
+        document.getElementById('serviceError').classList.remove('hidden');
+        isValid = false;
+      }
+      
+      if (!message) {
+        document.getElementById('messageError').classList.remove('hidden');
+        isValid = false;
+      }
+      
+      // If form is valid, send to WhatsApp
+      if (isValid) {
+        let text = `Halo Admin, saya ingin informasi lebih lanjut:\n` +
+                  `Nama: ${name}\n` +
+                  `Email: ${email}\n` +
+                  `No HP: ${phone}\n` +
+                  `Layanan: ${service}\n` +
+                  `Pesan: ${message}`;
+        
+        let nomorWA = '6281234567890'; // ganti dengan nomor WA kamu
+        let waLink = `https://wa.me/${nomorWA}?text=${encodeURIComponent(text)}`;
+        
+        window.open(waLink, '_blank');
+        
+        // Reset form after successful submission
+        document.getElementById('waForm').reset();
+      }
+    });
+  </script>
 </body>
 </html>
