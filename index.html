@@ -110,142 +110,6 @@
             100% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
         }
     </style>
-      <style>
-    
-    
-    /* Form styles */
-    .form-container {
-      width: 100%;
-      max-width: 800px;
-    }
-    
-    .bg-white {
-      background-color: white;
-    }
-    
-    .p-8 {
-      padding: 2rem;
-    }
-    
-    .rounded-2xl {
-      border-radius: 1rem;
-    }
-    
-    .shadow-lg {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    }
-    
-    /* Grid layout */
-    .grid {
-      display: grid;
-    }
-    
-    .grid-cols-1 {
-      grid-template-columns: 1fr;
-    }
-    
-    .gap-6 {
-      gap: 1.5rem;
-    }
-    
-    .mb-6 {
-      margin-bottom: 1.5rem;
-    }
-    
-    /* Text styles */
-    .block {
-      display: block;
-    }
-    
-    .text-gray-700 {
-      color: #4b5563;
-    }
-    
-    .font-medium {
-      font-weight: 500;
-    }
-    
-    .mb-2 {
-      margin-bottom: 0.5rem;
-    }
-    
-    /* Input styles */
-    .w-full {
-      width: 100%;
-    }
-    
-    .px-4 {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    
-    .py-3 {
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-    }
-    
-    .rounded-lg {
-      border-radius: 0.5rem;
-    }
-    
-    .border {
-      border-width: 1px;
-    }
-    
-    .border-gray-300 {
-      border-color: #d1d5db;
-    }
-    
-    input, select, textarea {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      border-radius: 0.5rem;
-      border: 1px solid #d1d5db;
-      outline: none;
-      transition: all 0.3s;
-      box-sizing: border-box;
-    }
-    
-    input:focus, select:focus, textarea:focus {
-      border-color: transparent;
-      box-shadow: 0 0 0 2px #4f46e5;
-    }
-    
-    /* Button styles */
-    .gradient-bg {
-      background: linear-gradient(to right, #4f46e5, #7c3aed);
-      color: white;
-      border: none;
-      padding: 0.75rem;
-      border-radius: 0.5rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: opacity 0.3s;
-      box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
-    }
-    
-    .gradient-bg:hover {
-      opacity: 0.9;
-    }
-    
-    /* Responsive */
-    @media (min-width: 768px) {
-      .md\:grid-cols-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    
-    /* Error message */
-    .error {
-      color: #ef4444;
-      font-size: 0.875rem;
-      margin-top: 0.25rem;
-    }
-    
-    .hidden {
-      display: none;
-    }
-      </style>
 </head>
     
 <body class="bg-gray-50">
@@ -752,59 +616,56 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <span class="text-sm font-semibold text-primary uppercase tracking-wider">Kontak</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Hubungi Kami</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    Punya acara dalam rencana atau ingin tahu lebih banyak tentang layanan kami? Hubungi kami hari ini untuk konsultasi gratis.
-                </p>
-            </div>
-            
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div class="lg:w-1/2">
-    <form class="bg-white p-8 rounded-2xl shadow-lg" id="waForm">  
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">  
-        <div>  
-          <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>  
-          <input type="text" id="name" placeholder="Nama Anda" required>
-          <span id="nameError" class="error hidden">Nama harus diisi</span>
-        </div>  
-        <div>  
-          <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>  
-          <input type="email" id="email" placeholder="Email Anda" required>
-          <span id="emailError" class="error hidden">Email tidak valid</span>
-        </div>  
-      </div>  
-      <div class="mb-6">  
-        <label for="phone" class="block text-gray-700 font-medium mb-2">Telepon</label>  
-        <input type="tel" id="phone" placeholder="Nomor Telepon Anda" required>
-        <span id="phoneError" class="error hidden">Nomor telepon harus diisi</span>
-      </div>  
-      <div class="mb-6">  
-        <label for="service" class="block text-gray-700 font-medium mb-2">Layanan yang Diminati</label>  
-        <select id="service" required>  
-          <option value="">Pilih Layanan</option>  
-          <option value="Corporate Event">Corporate Event</option>  
-          <option value="Wedding Organizer">Wedding Organizer</option>  
-          <option value="Birthday Party">Birthday Party</option>  
-          <option value="Concert & Festival">Concert & Festival</option>  
-          <option value="Graduation Ceremony">Graduation Ceremony</option>  
-          <option value="Exhibition & Bazaar">Exhibition & Bazaar</option>  
-        </select>
-        <span id="serviceError" class="error hidden">Silakan pilih layanan</span>
-      </div>  
-      <div class="mb-6">  
-        <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>  
-        <textarea id="message" rows="4" placeholder="Ceritakan tentang acara Anda" required></textarea>
-        <span id="messageError" class="error hidden">Pesan harus diisi</span>
-      </div>  
-      <button type="submit" class="w-full gradient-bg">  
-        Kirim Pesan  
-      </button>  
-            </form>
-                </div>
+      <section id="contact" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Hubungi Kami</h2>
+          <p class="text-gray-600">Buat acara Anda menjadi tak terlupakan bersama Rahayu EO</p>
+        </div>
+        
+        <form id="waForm" class="bg-white p-8 rounded-2xl shadow-lg">  
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">  
+            <div>  
+              <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>  
+              <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Nama Anda" required>
+              <p id="nameError" class="text-red-500 text-sm mt-1 hidden">Nama harus diisi</p>
+            </div>  
+            <div>  
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>  
+              <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Email Anda" required>
+              <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Email tidak valid</p>
+            </div>  
+          </div>  
+          <div class="mb-6">  
+            <label for="phone" class="block text-gray-700 font-medium mb-2">Telepon</label>  
+            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Nomor Telepon Anda" required>
+            <p id="phoneError" class="text-red-500 text-sm mt-1 hidden">Nomor telepon harus diisi</p>
+          </div>  
+          <div class="mb-6">  
+            <label for="service" class="block text-gray-700 font-medium mb-2">Layanan yang Diminati</label>  
+            <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>  
+              <option value="">Pilih Layanan</option>  
+              <option value="Corporate Event">Corporate Event</option>  
+              <option value="Wedding Organizer">Wedding Organizer</option>  
+              <option value="Birthday Party">Birthday Party</option>  
+              <option value="Concert & Festival">Concert & Festival</option>  
+              <option value="Graduation Ceremony">Graduation Ceremony</option>  
+              <option value="Exhibition & Bazaar">Exhibition & Bazaar</option>  
+            </select>
+            <p id="serviceError" class="text-red-500 text-sm mt-1 hidden">Silakan pilih layanan</p>
+          </div>  
+          <div class="mb-6">  
+            <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>  
+            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Ceritakan tentang acara Anda" required></textarea>
+            <p id="messageError" class="text-red-500 text-sm mt-1 hidden">Pesan harus diisi</p>
+          </div>  
+          <button type="submit" class="w-full gradient-bg text-white py-3 rounded-lg font-medium hover:opacity-90 transition duration-300 shadow-lg shadow-primary/30">  
+            Kirim Pesan  
+          </button>  
+        </form>
+      </div>
+    </div>
                 
                 <div class="lg:w-1/2">
                     <div class="bg-white p-8 rounded-2xl shadow-lg h-full">
@@ -1000,7 +861,7 @@
       e.preventDefault();
       
       // Reset error messages
-      document.querySelectorAll('.error').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#waForm p[id$="Error"]').forEach(el => el.classList.add('hidden'));
       
       // Get form values
       let name = document.getElementById('name').value.trim();
