@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://eo.rahayugroup.com/sitemap.xml
